@@ -10,13 +10,13 @@ pipeline {
 
         stage('Compile C Code') {
             steps {
-                sh 'gcc -o output project.c'  // Change 'main.c' if you have multiple files
+                bat 'gcc -o output project.c'  // Change 'main.c' if you have multiple files
             }
         }
 
         stage('Run Executable') {
             steps {
-                sh './output'  // Run the compiled program
+                bat './output'  // Run the compiled program
             }
         }
 
