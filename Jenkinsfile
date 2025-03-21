@@ -10,7 +10,7 @@ pipeline {
 
         stage('Compile C Code') {
             steps {
-                bat 'gcc -o output project.c'  // Change 'main.c' if you have multiple files
+                bat '"C:\\Windows\\System32\\cmd.exe" /c gcc -o output project.c'  // Change 'main.c' if you have multiple files
             }
         }
 
